@@ -1,24 +1,15 @@
-# python_repository_simple
+# flake8-bugbear sample
 
-本リポジトリはシンプルな Python 環境のテンプレートリポジトリです
-devcontainer の設定をしていますので、VS Code と Docker、Git さえあれば各種開発用設定が行われた Python の開発環境が構築され、即時開発が可能です
-GitHub のリポジトリページの「Use this template」を押下して使用してください
+本リポジトリは flake8 の拡張機能である[flake8-bugbear](https://github.com/PyCQA/flake8-bugbear)のサンプルコード確認用リポジトリです。
+以下の手順でサンプルを確認可能ですが、コードのみであれば公式リポジトリにサンプルコードがありますのでそちらを参考にしたほうが良いかと思います。
 
-## 内容
-
-- [devcontainer](https://code.visualstudio.com/docs/remote/containers)
-- lint
-  - [flake8](https://flake8.pycqa.org/en/latest/)
-  - [black](https://black.readthedocs.io/en/stable/)
-  - [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance), [pyright](https://github.com/microsoft/pyright)
-  - [hadolint](https://github.com/hadolint/hadolint)
-- [pytest](https://docs.pytest.org/en/stable/)
-- [GitHub Actions](https://github.co.jp/features/actions)
-- [logging](https://docs.python.org/ja/3/howto/logging.html)
+https://github.com/PyCQA/flake8-bugbear/tree/master/tests
 
 ## 環境詳細
 
-- Python : 3.9.6
+- Python: 3.9.6
+- flake8: 3.9.2
+- flake8-bugbear: 21.4.3
 
 ### 事前準備
 
@@ -27,18 +18,6 @@ GitHub のリポジトリページの「Use this template」を押下して使�
 - VS Code の拡張機能「Remote - Containers」インストール
   - https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 - 本リポジトリの clone
-- `.env` ファイルを空ファイルでプロジェクト直下に作成
-- 以下をプロジェクト名に合わせて変更
-  - `.devcontainer/devcontainer.json`
-    - `name`, `service`
-  - `docker-compose.yml`
-    - `services` の Key 名
-    - `image`, `container_name`
-  - main.py
-  - logging.conf
-    - `hoge` を使用するモジュール名に合わせる
-  - `README.md`
-  - `LICENSE`
 
 ### 開発手順
 
@@ -47,10 +26,4 @@ GitHub のリポジトリページの「Use this template」を押下して使�
 3. 「Remote-Containersa: Reopen in Container」クリック
 4. しばらく待つ
    - 初回の場合コンテナー image の取得や作成が行われる
-5. 起動したら開発可能
-
-## ユニットテスト実行
-
-```
-pytest
-```
+5. 起動したら確認可能
