@@ -30,7 +30,7 @@
     "python.formatting.blackArgs": ["--line-length", "100"],
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestEnabled": true,
+    "python.testing.pytestEnabled": false,
     "python.analysis.diagnosticMode": "workspace",
     "python.jediEnabled": false,
     "python.languageServer": "Pylance",
@@ -60,8 +60,7 @@
     "njpwerner.autodocstring",
     "eamodio.gitlens",
     "ms-python.vscode-pylance",
-    "VisualStudioExptTeam.vscodeintellicode",
-    "exiasr.hadolint"
+    "VisualStudioExptTeam.vscodeintellicode"
   ],
-  "postCreateCommand": "pip install -r requirements.txt -r requirements-dev.txt"
+  "postCreateCommand": "pip install -r requirements.txt"
 }
